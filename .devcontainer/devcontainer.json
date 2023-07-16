@@ -1,8 +1,8 @@
 {
     "name":"kaggle-deps",
     "dockerFile": "Dockerfile",  
-    "workspaceMount": "source=${localWorkspaceFolder},target=/kaggle,type=bind",
-    "workspaceFolder": "/kaggle",
+    "workspaceMount": "source=${localWorkspaceFolder},target=/workspace,type=bind",
+    "workspaceFolder": "/workspace",
     "runArgs": [
         "--gpus", "all",
         "--shm-size", "48gb"
